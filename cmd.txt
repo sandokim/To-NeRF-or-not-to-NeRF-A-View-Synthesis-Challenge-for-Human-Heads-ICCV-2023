@@ -1,0 +1,23 @@
+# Training
+
+# H4 --> bashrc set cuda-11.8 --> install locally jax success
+python train.py --config configs/004_00.txt --ckpt log/tensorf_004_00/tensorf_004_00.th --render_only 1 --render_test 1
+
+# do6
+CUDA_VISIBLE_DEVICES=2 taskset -c 0-16 python train.py --config configs/001_00_backview_X_Occ_reg_ver4_facemask_view.txt
+
+
+# PSNR / SSIM
+python evaluate.py --image_path /mai_nas/KHS/TensoRF/eval_results/facemask/ref/gt_images --target_path /mai_nas/KHS/TensoRF/eval_results/facemask/res/backview_X_Occ_reg_ver4 --facemasks_path /mai_nas/KHS/TensoRF/eval_results/facemask/ref/gt_face_masks
+
+# spiral view 생성
+CUDA_VISIBLE_DEVICES=1 python train.py --config configs/048_00.txt --ckpt log/tensorf_048_00/tensorf_048_00.th --render_only 1 --render_path 1
+
+# devPhase training
+1.Make the script executable by running the following command in the terminal:
+
+chmod +x run_train_chaPhase_test.sh
+
+2.Finally, you can run the script by executing the following command:
+
+bash run_train_chaPhase_test.sh
