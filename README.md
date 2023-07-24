@@ -24,7 +24,6 @@ pip install tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg 
 ```
 python train.py --config configs/002_00_backview_X_Occ_reg_ver4.txt
 python train.py --config configs/003_00_backview_X_Occ_reg_ver4.txt
-python train.py --config configs/004_00_backview_X_Occ_reg_ver4.txt
 ...
 python train.py --config configs/050_00_backview_X_Occ_reg_ver4.txt
 ```
@@ -47,7 +46,6 @@ The rendering results are located in your checkpoint folder.
 ```
 python train.py --config configs/002_00.txt
 python train.py --config configs/003_00.txt
-python train.py --config configs/004_00.txt
 ...
 python train.py --config configs/050_00.txt
 ```
@@ -60,3 +58,17 @@ python train.py --config configs/003_00.txt --ckpt log/tensorf_003_00/tensorf_00
 ...
 python train.py --config configs/050_00.txt --ckpt log/tensorf_050_00/tensorf_050_00.th --render_only 1 --render_test 1 
 ```
+
+## Pretrained weights
+
+You can find our pretrained weights here https://drive.google.com/file/d/1PDfYt7z_KJVwxlYi7D0E3U9tSjqXwLZH/view?usp=sharing
+
+To use pretrained weights to reproduce the results, simply run 
+
+```
+python train.py --config configs/002_00.txt --ckpt path/to/ckpt/tensorf_002_00_backview_X_Occ_reg_ver4/tensorf_002_00_backview_X_Occ_reg_ver4.th --render_only 1 --render_test 1
+python train.py --config configs/003_00.txt --ckpt path/to/ckpt/tensorf_003_00_backview_X_Occ_reg_ver4/tensorf_003_00_backview_X_Occ_reg_ver4.th --render_only 1 --render_test 1
+...
+python train.py --config configs/050_00.txt --ckpt path/to/ckpt/tensorf_050_00_backview_X_Occ_reg_ver4/tensorf_050_00_backview_X_Occ_reg_ver4.th --render_only 1 --render_test 1
+```
+
