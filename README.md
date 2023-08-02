@@ -1,4 +1,5 @@
-# Avoding floating artifacts by imposing Occlusion Regularization and Backside View Exclusion
+# Yonsei-KIST NeRF
+## Mitigating Floating Artifacts through Imposing Occlusion Regularization and Backview Exclusion
 To surpass the TensoRF baseline performance, we introduce occlusion regularization to reduce the floating artifacts commonly encountered in few-shot neural rendering tasks. The key idea of this regularization term is to penalize the density fields near the camera. Additionally, we find it beneficial to exclude all the backside views in the preprocessing step to avoid floating artifacts. This regularization significantly improves the baseline method. Our implementation extensively leverages the [FreeNeRF](https://github.com/Jiawei-Yang/FreeNeRF) codebase to incorporate the occlusion regularization.
 
 ## TensoRF
