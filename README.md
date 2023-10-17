@@ -1,6 +1,14 @@
 # Yonsei-KIST NeRF
+
 ## Mitigating Floating Artifacts through Imposing Occlusion Regularization and Backview Exclusion
 To surpass the TensoRF baseline performance, we introduce occlusion regularization to reduce the floating artifacts commonly encountered in few-shot neural rendering tasks. The key idea of this regularization term is to penalize the density fields near the camera. Additionally, we find it beneficial to exclude all the backside views in the preprocessing step to avoid floating artifacts. This regularization significantly improves the baseline method. Our implementation extensively leverages the [FreeNeRF](https://github.com/Jiawei-Yang/FreeNeRF) codebase to incorporate the occlusion regularization.
+
+## Publication
+VSCHH 2023: A Benchmark for the View Synthesis Challenge of Human Heads
+
+Youngkyoon Jang, Jiali Zheng, Jifei Song, Helisa Dhamo, Eduardo Pérez-Pellitero, Thomas Tanay, Matteo Maggioni, Richard Shaw, Sibi Catley-Chandar, Yiren Zhou, Jiankang Deng, Ruijie Zhu, Jiahao Chang, Ziyang Song, Jiahuan Yu, Tianzhu Zhang, Khanh-Binh Nguyen, Joon-Sung Yang, Andreea Dogaru, Bernhard Egger, Heng Yu, Aarush Gupta, Joel Julin, László A. Jeni, Hyeseong Kim, Jungbin Cho, Dosik Hwang, Deukhee Lee, Doyeon Kim, Dongseong Seo, SeungJin Jeon, YoungDon Choi, Jun Seok Kang, Ahmet Cagatay Seker, Sang Chul Ahn, Ales Leonardis, Stefanos Zafeiriou
+
+[Paper (PDF)](https://openaccess.thecvf.com/ICCV2023_workshops/RHWC)
 
 ## Installation
 
