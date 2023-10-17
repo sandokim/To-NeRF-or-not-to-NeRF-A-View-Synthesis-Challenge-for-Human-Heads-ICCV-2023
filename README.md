@@ -73,3 +73,15 @@ python train.py --config configs/003_00.txt --ckpt path/to/ckpt/tensorf_003_00_b
 python train.py --config configs/050_00.txt --ckpt path/to/ckpt/tensorf_050_00_backview_X_Occ_reg_ver4/tensorf_050_00_backview_X_Occ_reg_ver4.th --render_only 1 --render_test 1
 ```
 
+## Citation
+If you use this code or use our pre-trained weights for your research, please cite our paper:
+```
+@InProceedings{Jang_2023_ICCV,
+    author    = {Jang, Youngkyoon and Zheng, Jiali and Song, Jifei and Dhamo, Helisa and P\'erez-Pellitero, Eduardo and Tanay, Thomas and Maggioni, Matteo and Shaw, Richard and Catley-Chandar, Sibi and Zhou, Yiren and Deng, Jiankang and Zhu, Ruijie and Chang, Jiahao and Song, Ziyang and Yu, Jiahuan and Zhang, Tianzhu and Nguyen, Khanh-Binh and Yang, Joon-Sung and Dogaru, Andreea and Egger, Bernhard and Yu, Heng and Gupta, Aarush and Julin, Joel and Jeni, L\'aszl\'o A. and Kim, Hyeseong and Cho, Jungbin and Hwang, Dosik and Lee, Deukhee and Kim, Doyeon and Seo, Dongseong and Jeon, SeungJin and Choi, YoungDon and Kang, Jun Seok and Seker, Ahmet Cagatay and Ahn, Sang Chul and Leonardis, Ales and Zafeiriou, Stefanos},
+    title     = {VSCHH 2023: A Benchmark for the View Synthesis Challenge of Human Heads},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2023},
+    pages     = {1121-1128}
+}
+```
