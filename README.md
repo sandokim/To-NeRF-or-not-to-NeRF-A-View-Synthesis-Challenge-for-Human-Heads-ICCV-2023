@@ -22,6 +22,8 @@ pip install torch torchvision
 pip install tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg kornia lpips tensorboard
 ```
 
+Install locally jax https://jax.readthedocs.io/en/latest/installation.html
+
 ## To reproduce our results, set datadir to ILSH dataset in a configs file for each subject and run 
 
 ```
